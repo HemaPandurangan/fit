@@ -1,0 +1,585 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sidebar-container {
+  flex: 0 0 60px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f8f8f8;
+}
+
+.main-section {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.stats-grid-container {
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+ 
+}
+
+.chart-box {
+  flex: 1;
+  min-width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.profile-card, .meal-card {
+  min-width: 200px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card-inner, .meal-card-inner {
+  max-width: 300px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.profile-img {
+  width: 100%;
+  height: 32px;
+  object-fit: cover;
+}
+
+.profile-info {
+  padding: 16px;
+}
+
+.profile-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.profile-title {
+  color: #6b7280;
+}
+
+.profile-stats {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.profile-stat {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.profile-icon {
+  color: #fbbf24;
+  font-size: 1.25rem;
+}
+
+.profile-value {
+  margin-left: 8px;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.meal-header {
+  background-color: #d1fae5;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meal-title {
+  font-weight: 600;
+  color: #047857;
+}
+
+.meal-time {
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.meal-content {
+  padding: 16px;
+}
+
+.meal-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.meal-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.meal-info {
+  margin-left: 16px;
+}
+
+.meal-name {
+  font-weight: 600;
+}
+
+.meal-nutrients {
+  display: flex;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.nutrient {
+  margin-right: 8px;
+}
+
+.meal-progress {
+  display: flex;
+  margin-top: 4px;
+}
+
+.progress-bar {
+  height: 4px;
+  margin-right: 4px;
+}
+
+.progress-bar.purple {
+  width: 33.33%;
+  background-color: #8b5cf6;
+}
+
+.progress-bar.orange {
+  width: 33.33%;
+  background-color: #f97316;
+}
+
+.progress-bar.pink {
+  width: 33.33%;
+  background-color: #ec4899;
+}
+
+.user-profile-container {
+  flex: 1;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.food-card {
+  max-width: 28rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.food-card-header {
+  background-color: #f7fcbf;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meal-title {
+  font-weight: 600;
+  color: #047857;
+}
+
+.meal-time {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.food-card-content {
+  padding: 1rem;
+}
+
+.food-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.food-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100px;
+}
+
+.food-details {
+  margin-left: 1rem;
+}
+
+.food-name {
+  font-weight: 600;
+}
+
+.food-nutrients {
+  display: flex;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.nutrient {
+  margin-right: 0.5rem;
+}
+
+.nutrient-bars {
+  display: flex;
+  margin-top: 0.25rem;
+}
+
+.carbs-bar {
+  width: 33.3333%;
+  height: 0.25rem;
+  background-color: #a855f7;
+  margin-right: 0.25rem;
+}
+
+.protein-bar {
+  width: 33.3333%;
+  height: 0.25rem;
+  background-color: #f97316;
+  margin-right: 0.25rem;
+}
+
+.fat-bar {
+  width: 33.3333%;
+  height: 0.25rem;
+  background-color: #ec4899;
+}
+
+
+
+/* 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  width: 100vw; 
+  box-sizing: border-box;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden; 
+}
+
+.sidebar {
+  flex: 0 0 60px;  */
+  /* padding: 10px;
+  border-radius: 10px;
+  background: #f8f8f8;
+  box-sizing: border-box;
+}
+
+.main-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  overflow-y: auto; 
+  box-sizing: border-box;
+}
+
+.stats-grid {
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.chart-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.chart-card {
+  flex: 1;
+  min-width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.profile-card {
+  flex: 1 1 30%;
+  min-width: 200px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img-container {
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.profile-img {
+  width: 100%;
+  height: 32vh;
+  object-fit: cover;
+}
+
+.user-profile {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 110vh;
+  width: 110vh;
+
+  box-sizing: border-box;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  width: 2500px;
+  height: 900px;
+  overflow: hidden;
+}
+
+.sidebar {
+  flex: 0 0 60px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f8f8f8;
+}
+
+.main-section {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+
+  box-sizing: border-box;
+}
+
+.stats-grid {
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.chart-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.chart-card {
+  flex: 1;
+  min-width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.profile-card {
+  flex: 1 1 30%;
+  min-width: 200px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img-container {
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.profile-img {
+  width: 100%;
+  height: 32vh;
+  object-fit: cover;
+}
+
+.profile-info {
+  padding: 10px;
+}
+
+.profile-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.profile-role {
+  color: #6b7280;
+}
+
+.profile-stats {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.profile-stat-item {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.profile-stat-icon {
+  color: #fbbf24;
+  font-size: 1.5rem;
+}
+
+.profile-stat-number {
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+.food-card {
+  flex: 1 1 35%;
+  min-width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.meal-header {
+  background-color: #e1f5d6;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meal-title {
+  font-weight: 600;
+  color: #2e7d32; 
+}
+
+.meal-time {
+  font-size: 0.875rem; 
+  color: #6b7280;
+}
+
+.meal-details {
+  padding: 16px;
+}
+
+.meal-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.meal-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.meal-info {
+  margin-left: 16px;
+}
+
+.meal-name {
+  font-weight: 600;
+}
+
+.meal-nutrition {
+  display: flex;
+  font-size: 0.875rem; 
+  color: #6b7280; 
+}
+
+.meal-progress {
+  display: flex;
+  margin-top: 8px;
+}
+
+.meal-progress-bar {
+  height: 4px;
+  flex: 1;
+  margin-right: 4px;
+}
+
+.meal-progress-bar.purple {
+  background-color: #9c1de7;
+}
+
+.meal-progress-bar.orange {
+  background-color: #f59e0b;
+}
+
+.meal-progress-bar.pink {
+  background-color: #ec4899;
+}
+
+.user-profile {
+  flex: 1;
+  padding: 10px;
+  
+  
+  box-sizing: border-box;
+} */
